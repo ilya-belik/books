@@ -40,8 +40,11 @@
 		alert.innerHTML = text;
 		alertsContainer.appendChild(alert);
 		setTimeout(function(){
-			alert.remove();
-		}, 3000);
+			alert.style.opacity = 0;
+			setTimeout(function(){
+				alert.remove();
+			}, 500);
+		}, 2500);
 	}
 
 // open modal
