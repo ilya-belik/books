@@ -296,6 +296,9 @@
 	}
 
 // modal
+	.transition-modal{
+		transition: opacity .5s, visibility .5s;
+	}
 	.modal-container{
 		display: flex;
 		opacity: 0;
@@ -307,7 +310,6 @@
 		top: 0;
 		left: 0;
 		background-color: rgba(0, 0, 0, .7);
-		transition: opacity .5s, visibility .5s;
 		z-index: 10;
 
 		&.active-modal{

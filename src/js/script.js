@@ -19,6 +19,8 @@
 		en https://xdsoft.net/jqplugins/datetimepicker
 	*/ 
 
+
+
 // Рендер уведомления об успешном заказе
 	
 	function alert(param){
@@ -47,7 +49,10 @@
 		}, 2500);
 	}
 
-// open modal
+// modal
+	window.onload = function(){
+		modalContainer.classList.add('transition-modal');
+	}
 	function actions_modal(edit){
 		let checkbox = form.querySelector('.checkbox-group');
 		if (edit) {
