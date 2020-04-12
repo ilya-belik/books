@@ -38,8 +38,6 @@ let modalContainer = get_elem('.modal-container'),
 		en https://xdsoft.net/jqplugins/datetimepicker
 	*/ 
 
-
-
 // Рендер уведомления об успешном заказе
 	
 	function go_alert(param){
