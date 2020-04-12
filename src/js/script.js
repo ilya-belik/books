@@ -68,7 +68,7 @@ let modalContainer = get_elem('.modal-container'),
 		}, 2500);
 	}
 
-// Tooltips
+// Tooltips (не реализовано)
 	function tooltip(text){
 		let tooltip = document.createElement('div');
 		tooltip.className = 'tooltip';
@@ -96,11 +96,11 @@ let modalContainer = get_elem('.modal-container'),
 // Создание текущей даты
 	function date(param){
 		let date = new Date(),
-			 curr_date = `${date.getDate()}`,
+			 curr_date  = `${date.getDate()}`,
 			 curr_month = `${date.getMonth() + 1}`,
-			 curr_year = `${date.getFullYear()}`;
+			 curr_year  = `${date.getFullYear()}`;
 		if (param === 'random') {
-			curr_date = `${randInt(date.getDate(),30)}`;
+			curr_date  = `${randInt(date.getDate(),30)}`;
 			curr_month = `${randInt(date.getMonth()+1,12)}`;
 		}
 		if (curr_date.length < 2) {
@@ -155,8 +155,8 @@ let modalContainer = get_elem('.modal-container'),
 // Рендер блока в html с информацией о взятой книге
 	function render_html(reload){
 		let bookList = document.querySelector('.book-list'),
-			 order 	 = orders[orders.length - 1],
-			 elem;
+			 	order 	 = orders[orders.length - 1],
+			 	elem;
 			 
 		if (orders.length > 0) {
 			descBlock.classList.remove('d-none');
@@ -209,10 +209,11 @@ let modalContainer = get_elem('.modal-container'),
 // Проверка полей формы на пустоту
 	function check_form(){
 		let exit = 0;
+
 		// Проверка полей формы на пустоту
 	 	for(let i = 0; i < inputs.length; i++){
 			let input = inputs[i],
-				 val   = input.value;
+				 	val   = input.value;
 			
 			switch (val) {
 				case '':
@@ -228,6 +229,7 @@ let modalContainer = get_elem('.modal-container'),
 
 		return exit;
 	}
+
 // Создание объекта с данными из формы 
 	function create_obj(){
 		let order  = {},
@@ -236,7 +238,7 @@ let modalContainer = get_elem('.modal-container'),
 		if (deleteOrder.checked) return 'delOrder';
 		for (let i = 0; i < inputs.length; i++){
 			let val = inputs[i].value,
-				 id  = inputs[i].id;
+				 	id  = inputs[i].id;
 			
 			switch (id) {
 			 	case 'title-book-js':
@@ -313,7 +315,7 @@ let modalContainer = get_elem('.modal-container'),
 	function autofill(param, num){
 		let bookNum = randInt(0, books.length - 1);
 		for (let i = 0; i < inputs.length; i++){
-			let input = inputs[i],
+			let input  = inputs[i],
 				  val 	 = input.value,
 				  id  	 = inputs[i].id;
 			if (param === 'test') {
@@ -357,12 +359,12 @@ let modalContainer = get_elem('.modal-container'),
 // Клики на кнопки
 	
 
-	let saveOrder = get_elem('.save-order-js'),
-		 openModal =  get_elem('.add-book-js'),
-		 autoFill  = get_elem('#autofill'),
-		 cancelModal  = get_elem('.cancel-btn-js'),
-		 editBook  = get_elem('.book-list-js'),
-		 tooltipElem  = get_elem('.tooltip-elem');
+	let saveOrder 	= get_elem('.save-order-js'),
+			openModal 	=  get_elem('.add-book-js'),
+			autoFill  	= get_elem('#autofill'),
+			cancelModal = get_elem('.cancel-btn-js'),
+			editBook  	= get_elem('.book-list-js'),
+			tooltipElem = get_elem('.tooltip-elem');
 
 	// Сохранение формы
 	saveOrder.onclick = function(){
@@ -388,7 +390,7 @@ let modalContainer = get_elem('.modal-container'),
 	// Открытие модального окна уже существующего заказа
 	editBook.onclick = function(){
 		let target = event.target,
-			 edit = target.classList.contains('edit');
+			 	edit   = target.classList.contains('edit');
 
 		if (edit) {
 			let num = target.getAttribute('data-number');
@@ -399,7 +401,7 @@ let modalContainer = get_elem('.modal-container'),
 		}
 	};
 
-	// Появление подсказки
+	// Появление подсказки (не реализовано)
 	tooltipElem.onmouseover = function(){
 		// console.log(this.offsetTop);
 		// console.dir(this);

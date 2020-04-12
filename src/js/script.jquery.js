@@ -1,28 +1,28 @@
 // Массивы для рамндомного заполнения формы
-let names = ['Oliver','Jake','Noah','James','Jack','Connor','Liam','John','Harry','Callum','Mason','Robert','Jacob','Jacob','Jacob','Michael','Charlie','Kyle','William','William','Thomas','Joe','Ethan','David','George','Reece','Michael','Richard','Oscar','Rhys','Alexander','Joseph','James','Charlie','James','Charles','William','Damian','Daniel','Thomas','Amelia','Margaret','Emma','Mary','Olivia','Samantha','Olivia','Patricia','Isla','Bethany','Sophia','Jennifer','Emily','Elizabeth','Isabella','Elizabeth','Poppy','Joanne','Ava','Linda','Ava','Megan','Mia','Barbara','Isabella','Victoria','Emily','Susan','Jessica','Lauren','Abigail','Margaret','Lily','Michelle','Madison','Jessica','Sophie','Tracy','Charlotte','Sarah','Smith','Murphy','Smith','Li','Smith','Smith','Jones','Kelly','Johnson','Smith','Jones','Wilson','Williams','Sullivan','Williams','Lam','Williams','Williams','Brown','Walsh','Brown','Martin','Brown','Brown','Taylor','Smith','Jones','Gelbero','Wilson','Taylor','Davies','Brien','Miller','Roy','Taylor','Jones','Wilson','Byrne','Davis','Tremblay','Morton','Singh','Evans','Ryan','Garcia','Lee','White','Wang','Thomas','Connor','Rodriguez','Gagnon','Martin','Anderson','Roberts','Neill','Wilson','Wilson','Anderson','Li'],
+let names 	 = ['Oliver','Jake','Noah','James','Jack','Connor','Liam','John','Harry','Callum','Mason','Robert','Jacob','Jacob','Jacob','Michael','Charlie','Kyle','William','William','Thomas','Joe','Ethan','David','George','Reece','Michael','Richard','Oscar','Rhys','Alexander','Joseph','James','Charlie','James','Charles','William','Damian','Daniel','Thomas','Amelia','Margaret','Emma','Mary','Olivia','Samantha','Olivia','Patricia','Isla','Bethany','Sophia','Jennifer','Emily','Elizabeth','Isabella','Elizabeth','Poppy','Joanne','Ava','Linda','Ava','Megan','Mia','Barbara','Isabella','Victoria','Emily','Susan','Jessica','Lauren','Abigail','Margaret','Lily','Michelle','Madison','Jessica','Sophie','Tracy','Charlotte','Sarah','Smith','Murphy','Smith','Li','Smith','Smith','Jones','Kelly','Johnson','Smith','Jones','Wilson','Williams','Sullivan','Williams','Lam','Williams','Williams','Brown','Walsh','Brown','Martin','Brown','Brown','Taylor','Smith','Jones','Gelbero','Wilson','Taylor','Davies','Brien','Miller','Roy','Taylor','Jones','Wilson','Byrne','Davis','Tremblay','Morton','Singh','Evans','Ryan','Garcia','Lee','White','Wang','Thomas','Connor','Rodriguez','Gagnon','Martin','Anderson','Roberts','Neill','Wilson','Wilson','Anderson','Li'],
  	  surnames = ['Abram','Acker','Acton','Addington','Adley','Ainsley','Ainsworth','Alby','Allerton','Alston','Altham','Alton','Anderton','Ansley','Anstey','Appleton','Asheton','Ashley','Ashton','Astley','Atherton','Atterton','Axton','Badger','Barclay','Barlow','Barney','Barton','Becker','Beckwith','Benson','Bentham','Bentley','Berkeley','Beverley','Beverly','Bing','Birkenhead','Blackwood','Blakeley','Blakely','Blankley','Blyth','Blythe','Bradford','Bradley','Bradly','Bradshaw','Brady','Brandon','Branson','Braxton','Breeden','Brent','Brenton','Bristol','Brixton','Browning','Brownrigg','Buckingham','Budd','Burton','Byron','Camden','Carlisle','Carlton','Cason','Charlton','Chatham','Chester','Cholmondeley','Churchill','Clapham','Clare','Clayden','Clayton','Clifford','Clifton','Clinton','Clive','Colby','Colgate','Colton','Compton','Coombs','Copeland','Cornish','Cotton','Crawford','Cromwell','Cumberbatch','Dalton','Darby','Darlington','Davenport','Dayton','Deighton','Denholm','Denver','Digby','Dryden','Dudley','Durham','Eastaughffe','Eastoft','Easton','Eaton','Elton','Emsworth','Enfield','England','Everleigh','Everly','Farley','Fawcett','Fulton','Garfield','Garrick','Gladstone','Goody','Graeme','Graham','Gresham','Hackney','Hadlee','Hadleigh','Hadley','Hailey','Hale','Hales','Haley','Hallewell','Halsey','Hamilton','Hampton','Harlan','Harley','Harlow','Harrington','Hartford','Hastings','Hayden','Hayes','Hayhurst','Hayley','Hazelton','Holton','Hornsby','Huckabee','Hurley','Huxley','Keene','Kelsey','Kendal','Kendall','Kenley','Kensley','Kent','Kimberley','Kimberly','Kinsley','Kirby','Lancaster','Landon','Langdon','Langley','Langston','Law','Leighton','Lester','Lincoln','Linden','Lindsay','Lindsey','Livingstone','Lynn','Manley','Marlee','Marleigh','Marley','Marlowe','Marston','Merton','Middleton','Milton','Mitchell','Morley','Morton','Myerscough'],
- 	 	books = [
-		 	 				['In Search of Lost','Time Marcel Proust'],
-		 	 				['Ulysses','James Joyce'],  
-		 	 				['Don Quixote','Miguel de Cervantes'],
-		 	 				['The Great Gatsby','F. Scott Fitzgerald'],
-		 	 				['One Hundred Years of Solitude','Gabriel Garcia Marquez'],
-		 	 				['The Catcher in the Rye','J. D. Salinger'], 
-		 	 				['The Brothers Karamazov','Fyodor Dostoyevsky'],
-		 	 				['The Divine Comedy','Dante Alighieri'], 
-		 	 			];
+ 	 	books 	 = [
+			 	 				['In Search of Lost','Time Marcel Proust'],
+			 	 				['Ulysses','James Joyce'],  
+			 	 				['Don Quixote','Miguel de Cervantes'],
+			 	 				['The Great Gatsby','F. Scott Fitzgerald'],
+			 	 				['One Hundred Years of Solitude','Gabriel Garcia Marquez'],
+			 	 				['The Catcher in the Rye','J. D. Salinger'], 
+			 	 				['The Brothers Karamazov','Fyodor Dostoyevsky'],
+			 	 				['The Divine Comedy','Dante Alighieri'], 
+			 	 			];
 
 
-let modalContainer = $('.modal-container'),
-		 closeModal 	 = $('.cancel-btn-js'),
-		 orders 			 = [],
-		 form   			 = $('.book-form-js'),
-		 inputs 			 = $('.form-group input'),
-		 descBlock		 = $('.description'),
-		 countOrders	 = $('.count-orders-js'),
-	   alertsContainer = $('.alerts-container-js'),
-		 body 			   = $('body'),
-		 editMode		   = '';
+let modalContainer  = $('.modal-container'),
+		closeModal 	 	  = $('.cancel-btn-js'),
+		orders 			 	 	= [],
+		form   			 	 	= $('.book-form-js'),
+		inputs 			 	 	= $('.form-group input'),
+		descBlock		 	 	= $('.description'),
+		countOrders	 	 	= $('.count-orders-js'),
+	  alertsContainer = $('.alerts-container-js'),
+		body 			   		= $('body'),
+		editMode		   	= '';
 
 // datetimepicker
     $('.datetimepicker').datetimepicker({
@@ -37,12 +37,13 @@ let modalContainer = $('.modal-container'),
 
 // Создание текущей даты
 	function date(param){
-		let date = new Date(),
-			 curr_date = `${date.getDate()}`,
-			 curr_month = `${date.getMonth() + 1}`,
-			 curr_year = `${date.getFullYear()}`;
+		let date 			 = new Date(),
+			 	curr_date  = `${date.getDate()}`,
+			 	curr_month = `${date.getMonth() + 1}`,
+			 	curr_year  = `${date.getFullYear()}`;
+
 		if (param === 'random') {
-			curr_date = `${randInt(date.getDate(),30)}`;
+			curr_date  = `${randInt(date.getDate(),30)}`;
 			curr_month = `${randInt(date.getMonth()+1,12)}`;
 		}
 		if (curr_date.length < 2) {
@@ -58,31 +59,31 @@ let modalContainer = $('.modal-container'),
 
 // Рендер уведомления об успешном заказе
 	
-    function go_alert(param){
-        let textWrapper = $('<p>'),
-            text;
+  function go_alert(param){
+    let textWrapper = $('<p>'),
+        text;
             
-        switch (param) {
-          case 'new':
-              text  = `Book added`;
-              break;
-          case 'edit':
-              text  = `Information changed`;
-              break;
-          case 'remove':
-              text  = `Book deleted`;
-              break;
-        }
-        $(textWrapper).text(text);
-        let alert = $('<div>',{class: 'alert', html: textWrapper}).appendTo(alertsContainer);
-
-        setTimeout(function(){
-            alert.fadeOut();
-            setTimeout(function(){
-                alert.remove();
-            }, 500);
-        }, 2500);
+    switch (param) {
+      case 'new':
+        text  = `Book added`;
+        break;
+      case 'edit':
+        text  = `Information changed`;
+        break;
+      case 'remove':
+        text  = `Book deleted`;
+        break;
     }
+    $(textWrapper).text(text);
+    let alert = $('<div>',{class: 'alert', html: textWrapper}).appendTo(alertsContainer);
+
+    setTimeout(function(){
+      alert.fadeOut();
+      setTimeout(function(){
+        alert.remove();
+        }, 500);
+    }, 2500);
+  }
 
 // modal
     $(document).ready(function(){
