@@ -8,6 +8,11 @@
 	<link rel="stylesheet" href="src/css/main.css">		
 </head>
 <body>
+<!-- 
+	<div class="tooltip">
+		<p>Lorem ipsum</p>
+	</div> 
+-->
 	<div class="alerts-container alerts-container-js">
 	</div>
 	<header id="#header">
@@ -24,7 +29,7 @@
 	</div>
 
 	<footer id="#footer">
-		<button class="add-book add-book-js"><i class="material-icons">note_add</i>Lend a new book away</button>
+		<button class="add-book tooltip-elem add-book-js"><i class="material-icons">note_add</i>Lend a new book away</button>
 	</footer>
 
 
@@ -35,7 +40,7 @@
 				
 			</div>
 			<div class="modal-body">
-				<form class="book-fomrm-js">
+				<form class="book-form-js">
 					<div class="form-group">
 						<input type="text" id="title-book-js" placeholder="Title of the book:">
 						<i class="material-icons error-icon">error_outline</i>
@@ -69,6 +74,11 @@
 
 	<script src="src/js/jQuery.js"></script>
 	<script src="src/js/datetimepicker.full.min.js"></script>
-	<script src="src/js/script.js"></script>
+
+	<!-- Код на jquery -->
+	<script src="src/js/script.jquery.js"></script>
+
+	<!-- Код на js -->
+	<!-- <script src="src/js/script.js"></script> -->
 </body>
 </html>

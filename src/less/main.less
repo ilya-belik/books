@@ -111,7 +111,17 @@
 	.d-none{
 		display: none!important;
 	}
-	
+	.tooltip{
+		position: absolute;
+		padding: 12px 17px;
+		background: lighten(@gray_dark, 50%);
+		transition: opacity .5s;
+		animation: opacity linear .5s;
+		z-index: 11;
+		p{
+			color: lighten(@gray_dark, 10%);
+		}
+	}
 	.alerts-container{
 		position: fixed;
 		bottom: 0;
