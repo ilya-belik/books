@@ -14,6 +14,14 @@ let names = ['Oliver','Jake','Noah','James','Jack','Connor','Liam','John','Harry
 		 	 				['The Catcher in the Rye','J. D. Salinger'], 
 		 	 				['The Brothers Karamazov','Fyodor Dostoyevsky'],
 		 	 				['The Divine Comedy','Dante Alighieri'], 
+		 	 				['To Kill a Mockingbird','Harper Lee'], 
+		 	 				['Harry Potter and the Philosopher’s Stone','J.K. Rowling'],
+		 	 				['The Lord of the Rings','J.R.R. Tolkien'], 
+		 	 				['The Great Gatsby','F. Scott Fitzgerald'], 
+		 	 				['Pride and Prejudice','Jane Austen'], 
+		 	 				['The Diary Of A Young Girl','Anne Frank'],
+		 	 				['The Book Thief','Markus Zusak'],
+		 	 				['The Hobbit','J.R.R. Tolkien'],
 		 	 			];
 
 let modalContainer = get_elem('.modal-container'),
@@ -286,7 +294,6 @@ let modalContainer = get_elem('.modal-container'),
 				go_alert('remove');
 				actions_modal();
 				clear_inputs(inputs);
-				return;
 			}else {
 				block.innerHTML = orderBlock(order, Number(editMode) + 1);
 				orders[editMode] = order;

@@ -317,7 +317,6 @@ let modalContainer  = $('.modal-container'),
 				actions_modal();
 				clear_inputs();
 				go_alert('remove');
-				return;
 			}else {
 				$(block).html(orderBlock(order, Number(editMode) + 1));
 				orders[editMode] = order;
